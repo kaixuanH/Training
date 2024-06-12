@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Assignment</title>
+    <!-- <link rel="stylesheet" href="./styles.css"> -->
+</head>
+
+<!-- css style here -->
+<style>
+    .center{
+        margin: auto;
+        width: 50%;
+    }
+    h1{
+        text-align: center;
+    }
+    form div{
+        margin-top: 5px;
+        text-align: left;
+    }
+    .container{
+        display: flex;
+    }
+    /* .container>div {
+        width: 265px;
+        padding-right: 5px;
+    } */
+    input[type=text], input[type=password]{
+        width: 120px;
+        padding: 8px;
+        border-radius: 3px;
+    }
+    input[type=number], input[type=email]{
+        width: 265px;
+        padding: 8px;
+        border-radius: 3px;
+    }
+    button[type=submit]{
+        width: 120px;
+        padding: 8px;
+        border-radius: 3px;
+    }
+    p {
+        padding: 10px;
+    }
+    a{
+        color: dodgerblue;
+    }
+    #register{
+        background-color:royalblue;
+        color: white;
+    }
+    #signIn{
+        background-color: green;
+        color: white;
+    }
+</style>
+<!--end of css style -->
+
+<body>
+    <div class="center">
+        <!-- <center> -->
+        <h1>Sign Up</h1>
+
+        <form>
+            <div>
+                <!-- names -->
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+            </div>
+            <div>
+                <!-- phone # -->
+                <input type="number" placeholder="Mobile No.">
+            <div>
+                <!-- email -->
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div>
+                <!-- password -->
+                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Confirm Password">
+            </div>
+
+            <div class="container">
+                <span>
+                    <input type="checkbox" required>
+                    <label>I Agree</label>
+                </span>
+                
+                <p>By clicking register, you agree to the
+                    <a href="#">Terms and Conditions</a> set
+                    out by this site, including our Cookie Use. </p>
+            </div>
+   
+        </form>
+
+        <button type="submit" id="register">Register</button>
+        <button type="submit" id="signIn">Sign In</button>
+        <!-- </center> -->
+    </div>
+  
+</body>
+</html>
