@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evaluation Event List</title>
+    <link href="./eventList.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main id="event-list-app">
+      <div class="add-event-form add-new">
+        <button id="add-new-event-button" class="add-new-event">Add New Event</button>
+      </div>
+      <div class="event-list">
+        <table>
+          <thead>
+            <tr>
+              <th>Event</th>
+              <th>Start</th>
+              <th>End</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="event-table-body">
+            
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <script src="./api/eventApi.js"></script>
+    <script src="./features/eventView.js"></script>
+    <script src="./features/eventModel.js"></script>
+    <script src="./features/eventController.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
